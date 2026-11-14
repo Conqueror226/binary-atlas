@@ -60,7 +60,6 @@ See [the contribution guide](CONTRIBUTING.md), [publication workflow](docs/portf
 | Notes, local project drafts and progress | Browser localStorage | No automatic upload or sync |
 | JSON workspace backups | Your downloaded file | Only if you deliberately share them |
 
-The original ChatGPT-hosted workspace remains separate and private. Export there and import here to transfer progress; migration does not read its browser storage automatically. Browser storage is scoped by origin; other projects on the same GitHub Pages origin can share the storage area.
 
 ## Evidence standards
 
