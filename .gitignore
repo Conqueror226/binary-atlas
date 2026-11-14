@@ -1,0 +1,12 @@
+dist/
+node_modules/
+.DS_Store
+*.o
+*.exe
+*.out
+__pycache__/
+.env
+.env.*
+!.env.example
+backups/
+*.log

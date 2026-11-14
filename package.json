@@ -1,0 +1,15 @@
+{
+  "name": "binary-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check site/app.js && node --check site/data.js && node scripts/check-content.mjs && node scripts/check-state.mjs && node scripts/check-portfolio.mjs",
+    "test": "npm run check",
+    "labs:export": "node scripts/export-labs.mjs",
+    "preview": "python3 -m http.server 8000 --directory dist"
+  }
+}

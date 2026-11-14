@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { root, readProjects } from './portfolio.mjs';
+const projects = readProjects();
+const app=fs.readFileSync(path.join(root,'site/app.js'),'utf8');
+assert(app.includes('publishedPortfolio'));
+const html=fs.readFileSync(path.join(root,'site/index.html'),'utf8');
+assert(html.indexOf('published-projects.js') < html.indexOf('app.js'));
+assert(!html.includes('chatgpt.site'));
+console.log('Portfolio manifest passed: '+projects.length+' entries. Structure checked; truth of findings is not automated.');

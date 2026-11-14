@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { root, readProjects } from './portfolio.mjs';
+const projects = readProjects();
+const dist = path.join(root,'dist');
+fs.rmSync(dist,{recursive:true,force:true});
+fs.mkdirSync(dist,{recursive:true});
+fs.cpSync(path.join(root,'site'),dist,{recursive:true});
+fs.writeFileSync(path.join(dist,'published-projects.js'),'/* Generated from portfolio/projects.json. */\nconst PUBLISHED_PROJECTS = '+JSON.stringify(projects).replace(/</g,'\\u003c')+';\n');
+fs.cpSync(path.join(root,'portfolio'),path.join(dist,'portfolio'),{recursive:true,filter:source=>!source.includes('/templates/')});
+fs.writeFileSync(path.join(dist,'.nojekyll'),'');
+console.log('Built Binary Atlas with '+projects.length+' published portfolio entries.');
