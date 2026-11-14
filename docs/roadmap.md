@@ -16,9 +16,18 @@ These are planned directions, not completed capabilities or personal achievement
 - Compare Ghidra hypotheses with debugger observations.
 - Use Python to automate hashes, metadata and reproducible analysis steps.
 
+## Automate and engineer (stages 06–07)
+
+- Run the fuzzing and coverage exercises and publish every trial, not the best one.
+- Confirm a solver-generated input on the real binary.
+- Answer one call-graph reachability question with static and debugger evidence.
+- Write one design brief and have it challenged before sharing it.
+- Open and date-check the resources marked "not yet checked".
+
 ## Extend after the foundations
 
-- Evaluate fuzzing and test minimization on an owned parser.
+- Add test-case minimization and a second fuzzer for comparison.
+- Try an openly licensed firmware image for the hardening inventory.
 - Model sample/function/evidence relationships in Neo4j.
 - Improve report rendering, evidence navigation and resource freshness checks as needs emerge.
 - Evaluate optional storage or authentication separately if cross-device synchronization becomes necessary.
