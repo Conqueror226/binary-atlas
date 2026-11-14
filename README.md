@@ -7,7 +7,8 @@ The path builds on Python, Windows event logs, SIEM, digital forensics and ident
 ## Start here
 
 - **Website:** https://conqueror226.github.io/binary-atlas/
-- **Learning:** six stages, twelve guided exercises, core concepts, official resources and comparison views.
+- **Learning:** eight stages, twenty guided exercises, core concepts, official resources and comparison views. Stages 06–07 cover automated analysis (fuzzing, coverage, symbolic execution, call-graph reachability) and engineering for industry (hardening inventory, patch verification, crash triage, design brief).
+- **EngD alignment:** known and unknown facts about the target position, a competency map tied to your completion records, and four candidate design directions. See [the alignment review](docs/engd-alignment.md).
 - **Practice:** local notes, progress, session tracking and JSON backup import/export.
 - **Portfolio:** committed public reports appear alongside your local draft workspace, with provenance, evidence and bounded conclusions.
 
@@ -32,11 +33,11 @@ Open `http://localhost:8000`. Edit `site/`, then rebuild to preview changes.
 | Path | Purpose |
 | --- | --- |
 | `site/` | HTML, CSS, app logic and learning content |
-| `labs/` | Twelve exported exercise guides and supplied teaching sources |
+| `labs/` | Twenty exported exercise guides, teaching sources and small analysis scripts (Python standard library; `solve_gate.py` needs angr) |
 | `portfolio/projects.json` | Index of reviewed public investigations |
 | `portfolio/projects/` | Public Markdown reports |
 | `portfolio/evidence/` | Reviewed evidence referenced by public reports |
-| `portfolio/templates/` | Research and evidence templates |
+| `portfolio/templates/` | Research, evidence and EngD design brief templates |
 | `docs/` | Deployment, migration, contribution workflow and roadmap |
 | `scripts/` | Build, curriculum checks, backup checks and lab export |
 | `.github/workflows/pages.yml` | Checks on pull requests; deployment from main |
@@ -65,6 +66,6 @@ See [the contribution guide](CONTRIBUTING.md), [publication workflow](docs/portf
 
 Separate observation, inference and uncertainty. Record clean reruns before self-verification. Automated checks validate structure and file references; they cannot establish the truth of a research claim. Do not present generated teaching examples as your own verified findings.
 
-Primary learning resource links were last checked **2026-11-11**; consult their official sites for current requirements. Study times are estimates. The instruction trace is an illustrative unsigned x86-64 model. The site does not run native compilers or debuggers.
+Each resource records the date its page was last checked. Resources added on 2026-11-14 that have not been opened yet are shown as **not yet checked**; consult the official sites for current requirements. Study times are estimates. The instruction trace is an illustrative unsigned x86-64 model. The site does not run native compilers or debuggers.
 
 No redistribution license has been selected yet. Third-party tools and resources retain their own licenses.

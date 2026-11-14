@@ -15,3 +15,9 @@
 @media(max-width:760px){.mobile-nav-close{display:grid;position:absolute;right:9px;top:7px;font-size:25px;width:30px;height:30px}.sidebar.open+.mobile-nav-shade{display:block;position:fixed;inset:0;background:#223c2c55;z-index:29;backdrop-filter:blur(2px)}}
 .mobile-trace{display:none}
 @media(max-width:480px){.mobile-trace{display:inline-flex;margin-top:18px;font-size:10px}.metric-label{font-size:10px}.metric{min-height:95px}.metric-value small{font-size:9px}.hero-foot{font-size:9px}.overview-stages .stage-card-footer{font-size:10px!important}.welcome-line{font-size:8px}.exercise-card .card-footer{font-size:10px}}
+
+.fact-row{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}.fact-row:last-child{border-bottom:0}.fact-row .icon{flex:none;width:16px;height:16px;color:var(--green);margin-top:3px}.fact-row p{margin:0 0 2px}.fact-row small{color:var(--muted)}
+.engd-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:15px;margin-bottom:26px}.engd-grid .panel h3{margin:10px 0 4px}.engd-grid .panel>p{margin:0 0 10px;color:var(--text)}
+.direction h3{margin:6px 0 12px;font-size:17px}.direction-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 24px;margin:0 0 14px}.direction-list dt{font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin-bottom:3px}.direction-list dd{margin:0;line-height:1.5}
+.lab-files{margin:16px 0;padding:14px 16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--soft);display:grid;gap:6px}.lab-files small{color:var(--muted)}
+.detail-grid>*{min-width:0}.code-block{overflow-x:auto;max-width:100%}
