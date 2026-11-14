@@ -1,8 +1,8 @@
 # Binary Atlas
 
-A hands-on learning workspace and evidence-based portfolio by **A. Kader BONZI**, exploring low-level binary analysis, reverse engineering, and defensive vulnerability research.
+A hands-on learning workspace and evidence-based portfolio by **A. Kader BONZI**, exploring low-level binary analysis, reverse engineering and defensive vulnerability research.
 
-The path builds on Python, Windows event logs, Security Onion, Neo4j, digital forensics, and identity security. C and assembly proficiency remain unassessed until practical work demonstrates them.
+The path builds on Python, Windows event logs, SIEM, digital forensics and identity security. C and assembly proficiency remain unassessed until practical work demonstrates them.
 
 ## Start here
 
